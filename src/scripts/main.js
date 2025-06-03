@@ -232,7 +232,7 @@ tableBody.addEventListener('dblclick', (e) => {
   textArea.style.height = td.clientHeight + 'px';
 
   textArea.classList.add('cell-input');
-  textArea.value = '';
+  textArea.value = originalTdValue;
   td.innerHTML = '';
   td.append(textArea);
   textArea.focus();
